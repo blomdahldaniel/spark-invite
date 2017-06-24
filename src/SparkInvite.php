@@ -43,12 +43,12 @@ class SparkInvite
 
     public function acceptLink($invitation)
     {
-        return secure_url(str_replace('{token}', $invitation->token, config('sparkinvites.routes.accept')));
+        return secure_url(str_replace('{token}', $invitation->token, config('sparkinvite.routes.accept')));
     }
 
     public function rejectLink($invitation)
     {
-        return secure_url(str_replace('{token}', $invitation->token, config('sparkinvites.routes.reject')));
+        return secure_url(str_replace('{token}', $invitation->token, config('sparkinvite.routes.reject')));
     }
 
     /**
